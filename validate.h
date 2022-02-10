@@ -34,4 +34,19 @@ bool isDigit(string num) {
 
     }
 
+bool isBit(string bit){
+
+    int value,a;
+
+    a=0;
+    for(int i = 0; i < bit.length(); i++) {
+        if(bit[i] == '1' || bit[i] == '0')
+            a++;
+        }
+
+    return a == bit.length();
+    }
+
+
+
 #endif // VALIDATE_H_INCLUDED

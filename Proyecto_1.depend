@@ -30,3 +30,27 @@
 1644503510 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\reverse.h
 	<string>
 
+1644521971 source:c:\users\usuario\documents\calculadora\number-converter\main.cpp
+	<iostream>
+	"math.h"
+	"hexadecimal.h"
+	"binario.h"
+	"validate.h"
+
+1644520579 c:\users\usuario\documents\calculadora\number-converter\hexadecimal.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<math.h>
+	"reverse.h"
+
+1644520579 c:\users\usuario\documents\calculadora\number-converter\reverse.h
+	<string>
+
+1644520966 c:\users\usuario\documents\calculadora\number-converter\validate.h
+	<string>
+
+1644520579 c:\users\usuario\documents\calculadora\number-converter\binario.h
+	<string>
+	"reverse.h"
+
