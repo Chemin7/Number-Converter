@@ -112,9 +112,18 @@ void menu()
         switch(opc)
         {
         case 7:
-            cout<<"Ingrese un numero decimal: "<<endl;
-            cin>>input;
 
+
+            i=0;
+            do
+            {
+                cout<<"Ingrese un numero decimal: "<<endl;
+                cin>>input;
+                if(isDigit(input)){
+                    bit=stoi(input);
+                    i++;
+                }
+            }while(i==0);
             bit=stoi(input);
 
             intToBit(bit,num);
