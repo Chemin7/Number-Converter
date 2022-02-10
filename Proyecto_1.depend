@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1644369206 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\nueva carpeta\proyecto_1\main.cpp
+	<iostream>
+	"opSimples.h"
+
+1644367558 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\nueva carpeta\proyecto_1\opsimples.cpp
+
+1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\nueva carpeta\proyecto_1\opsimples.h
+	<math.h>
+
+1644506143 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\main.cpp
+	<iostream>
+	"math.h"
+	"hexadecimal.h"
+	"validate.h"
+
+1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\opsimples.h
+	<math.h>
+
+1644503154 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\hexadecimal.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<math.h>
+	"reverse.h"
+
+1644503975 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\validate.h
+	<string>
+
+1644503510 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\reverse.h
+	<string>
+
