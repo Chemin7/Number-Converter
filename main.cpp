@@ -3,6 +3,7 @@
 #include "hexadecimal.h"
 #include "binario.h"
 #include "validate.h"
+#include "octal.h"
 
 using namespace std;
 
@@ -85,7 +86,7 @@ void menu() {
                 break;
 
             }
-            cout<<endl;
+        cout<<endl;
         }
     else if(opc==6) {
         i=0;
@@ -106,24 +107,27 @@ void menu() {
         switch(opc) {
             case 7:
                 cout << inputFunc("Intoduce un numero decimal: ",1,&intToBit)
-                     << '\n';
+                     << endl;
                 break;
             case 8:
 
                 cout << inputFunc("Intoduce un numero binario: ",2,&bitToInt)
-                     << '\n';
+                     << endl;
 
                 break;
             case 9:
-
+                cout << inputFunc("Intoduce un numero decimal: ",1,&intToOct)
+                     << endl;
                 break;
             case 10:
                 break;
             case 11:
-                cout << inputFunc("Intoduce un numero decimal: ",1,&deciToHexa)
-                     << '\n';
+                cout << inputFunc("Intoduce un numero decimal: ",1,&intToHexa)
+                     << endl;
                 break;
             case 12:
+                cout << inputFunc("Intoduce un numero hexadecimal: ",3,&hexaToInt)
+                     << endl;
                 break;
 
             }
@@ -131,7 +135,7 @@ void menu() {
     }
 
 //User interface
-string inputFunc(string input,int valid,string (*func) (string ,string* )) {
+string inputFunc(string input,int valid,string (*func) (string,string* )) {
     int i;
     string num;
 
@@ -150,6 +154,12 @@ string inputFunc(string input,int valid,string (*func) (string ,string* )) {
             case 2:
                 if(isBit(num))
                     i++;
+                break;
+            case 3:
+                if(isHexa(num))
+                    i++;
+                break;
+
             }
 
         }
@@ -163,12 +173,13 @@ string inputFunc(string input,int valid,string (*func) (string ,string* )) {
 int main() {
     char opc;
 
-    do{
+    do {
         menu();
         cout<<"Continuar [S]i o [N]o: ";
         cin>>opc;
         system("cls");
-    }while(opc == 's');
+        }
+    while(opc == 's');
 
 
     return 0;

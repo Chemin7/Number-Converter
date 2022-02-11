@@ -8,17 +8,18 @@
 1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\nueva carpeta\proyecto_1\opsimples.h
 	<math.h>
 
-1644549421 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\main.cpp
+1644556304 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\main.cpp
 	<iostream>
 	"math.h"
 	"hexadecimal.h"
 	"binario.h"
 	"validate.h"
+	"octal.h"
 
 1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\opsimples.h
 	<math.h>
 
-1644549288 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\hexadecimal.h
+1644550989 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\hexadecimal.h
 	<iostream>
 	<cstdlib>
 	<string>
@@ -57,5 +58,10 @@
 
 1644548363 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\binario.h
 	<string>
+	"reverse.h"
+
+1644556526 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\octal.h
+	<string>
+	<math.h>
 	"reverse.h"
 

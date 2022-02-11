@@ -43,7 +43,7 @@ char convertHex(int num) {
 
 }
 
-string deciToHexa(string str_num, string* ptr) {
+string intToHexa(string str_num, string* ptr) {
     int cociente(0),residuo(0);
     string txt = "";
     string* ptr_txt=&txt;
@@ -64,7 +64,7 @@ string deciToHexa(string str_num, string* ptr) {
 
 
 
-string hexaToDeci(string hexa,string* ptr) {
+string hexaToInt(string hexa,string* ptr) {
 
     int sum=0;
 
@@ -104,8 +104,7 @@ string hexaToDeci(string hexa,string* ptr) {
 
 
         }
-    *ptr = sum;
-
+    *ptr = to_string(sum);
     return *ptr;
 
     }
