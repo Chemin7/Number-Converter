@@ -8,29 +8,6 @@
 #include "reverse.h"
 
 using namespace std;
-void deciToHexa(int,string*);
-char convertHex(int);
-
-void convertDeci(int,string*);
-void hexaToDeci(string hexa,int* num);
-
-
-
-void deciToHexa(int numero, string* ptr) {
-    int cociente=0;
-    int residuo=0;
-    string txt = "";
-    string* ptr_txt=&txt;
-
-    while(numero>0) {
-        cociente=numero/16;
-        residuo=numero%16;
-        txt+=convertHex(residuo);
-        numero=cociente;
-        }
-    *ptr = txt;
-    reverseStr(*ptr);
-    }
 
 char convertHex(int num) {
 
@@ -66,9 +43,28 @@ char convertHex(int num) {
 
 }
 
+string deciToHexa(string str_num, string* ptr) {
+    int cociente(0),residuo(0);
+    string txt = "";
+    string* ptr_txt=&txt;
+
+    int numero = stoi(str_num);
+
+    while(numero>0) {
+        cociente=numero/16;
+        residuo=numero%16;
+        txt+=convertHex(residuo);
+        numero=cociente;
+        }
+    *ptr = reverseStr(txt);
+    return *ptr;
+    }
 
 
-void hexaToDeci(string hexa,int* num) {
+
+
+
+string hexaToDeci(string hexa,string* ptr) {
 
     int sum=0;
 
@@ -108,7 +104,9 @@ void hexaToDeci(string hexa,int* num) {
 
 
         }
-    *num = sum;
+    *ptr = sum;
+
+    return *ptr;
 
     }
 

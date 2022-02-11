@@ -32,8 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="binario.h" />
 		<Unit filename="hexadecimal.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="octal.h" />
+		<Unit filename="reverse.h" />
 		<Unit filename="validate.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

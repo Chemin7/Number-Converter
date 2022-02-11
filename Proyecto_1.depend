@@ -8,26 +8,27 @@
 1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\nueva carpeta\proyecto_1\opsimples.h
 	<math.h>
 
-1644506143 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\main.cpp
+1644549421 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\main.cpp
 	<iostream>
 	"math.h"
 	"hexadecimal.h"
+	"binario.h"
 	"validate.h"
 
 1644370608 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\opsimples.h
 	<math.h>
 
-1644503154 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\hexadecimal.h
+1644549288 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\hexadecimal.h
 	<iostream>
 	<cstdlib>
 	<string>
 	<math.h>
 	"reverse.h"
 
-1644503975 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\validate.h
+1644536308 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\validate.h
 	<string>
 
-1644503510 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\reverse.h
+1644548420 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\reverse.h
 	<string>
 
 1644522998 source:c:\users\usuario\documents\calculadora\number-converter\main.cpp
@@ -51,6 +52,10 @@
 	<string>
 
 1644520579 c:\users\usuario\documents\calculadora\number-converter\binario.h
+	<string>
+	"reverse.h"
+
+1644548363 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 4\proyecto_1\binario.h
 	<string>
 	"reverse.h"
 

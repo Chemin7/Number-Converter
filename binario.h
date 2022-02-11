@@ -6,33 +6,39 @@
 
 using namespace std;
 
-void intToBit(int num,string* ptr) {
-    int cociente=0;
-    int residuo=0;
+string intToBit(string str_num,string* ptr) {
+    int cociente(0),residuo(0);
+    string txt;
+
+    int num = stoi(str_num);
 
     while(num > 0) {
         cociente=num/2;
         residuo=num%2;
         num=cociente;
-        *ptr+=to_string(residuo);
+        txt+=to_string(residuo);
         }
-        reverseStr(*ptr);
+        *ptr = reverseStr(txt);
+
+        return *ptr;
     }
 
 
-void bitToInt(int bit,int* ptr_num){
+string bitToInt(string bit,string* ptr){
     string strBit;
     int sum;
 
-    strBit = to_string(bit);
+
     sum=0;
-    for(int i = strBit.length()-1,j=1;i >= 0;i--,j+=j){
-        if(strBit[i] == '1')
+    for(int i = bit.length()-1,j=1;i >= 0;i--,j+=j){
+        if(bit[i] == '1')
             sum +=j;
 
 
     }
-    *ptr_num = sum;
+    *ptr = to_string(sum);
+
+    return *ptr;
 
 }
 
