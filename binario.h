@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string intToBit(string str_num,string* ptr) {
+void intToBit(string str_num,string* ptr) {
     int cociente(0),residuo(0);
     string txt;
 
@@ -19,12 +19,10 @@ string intToBit(string str_num,string* ptr) {
         txt+=to_string(residuo);
         }
         *ptr = reverseStr(txt);
-
-        return *ptr;
     }
 
 
-string bitToInt(string bit,string* ptr){
+void bitToInt(string bit,string* ptr){
     string strBit;
     int sum;
 
@@ -37,8 +35,6 @@ string bitToInt(string bit,string* ptr){
 
     }
     *ptr = to_string(sum);
-
-    return *ptr;
 
 }
 

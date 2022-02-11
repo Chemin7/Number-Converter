@@ -7,30 +7,27 @@
 
 using namespace std;
 
-string inputFunc(string input,int valid,string (*func) (string num,string* ptr)) ;
+void inputFunc(string ,int ,void (*) (string ,string* )) ;
 
 string str_g;
 string *ptr_g(&str_g);
 
-factorial(unsigned long *ptr_num) {
+void factorial(string str_num, string *ptr){
+    int num(stoi(str_num));
 
     unsigned long sum = 1;
-    for (int i = 1; i <= *ptr_num; i++) {
+    for (int i = 1; i <= num; i++) {
         sum *= i;
         }
-    *ptr_num = sum;
-    }
+
+    *ptr = to_string(sum);
+
+
+}
 
 void menu() {
     int opc,a,b,i;
-    unsigned long f;
-    unsigned long *ptr_f(&f);
-    string input,str_bit,str_a,str_b,prueba;
-    int bit;
-    int *ptr_bit(&bit);
-
-    string *num=&prueba;
-
+    string input,str_a,str_b;
     int* ptr_a(&a),*ptr_b(&b);
 
 
@@ -88,46 +85,37 @@ void menu() {
             }
         cout<<endl;
         }
-    else if(opc==6) {
-        i=0;
-        do {
-            cout<<"Ingrese el numero para sacarle factorial: "<<endl;
-            cin>>input;
-            if(isDigit(input)) {
-                f=stoi(input);
-                i++;
-                }
-            }
-        while(i==0);
-        unsigned long temp = f;
-        factorial(ptr_f);
-        printf("%u! = %u",temp,f);
-        }
-    else if(opc>= 7 && opc <=12) {
+    else if(opc>= 6 && opc <=12) {
         switch(opc) {
-            case 7:
-                cout << inputFunc("Intoduce un numero decimal: ",1,&intToBit)
-                     << endl;
+            case 6:
+                inputFunc("Intoduce un numero para sacarle factorial: ",1,&factorial);
+                cout<<str_g<<endl;
                 break;
+
+            case 7:
+                inputFunc("Intoduce un numero decimal: ",1,&intToBit);
+                cout<<str_g<<endl;
+                break;
+
             case 8:
-
-                cout << inputFunc("Intoduce un numero binario: ",2,&bitToInt)
-                     << endl;
-
+                inputFunc("Intoduce un numero binario: ",2,&bitToInt);
+                cout<<str_g<<endl;
                 break;
             case 9:
-                cout << inputFunc("Intoduce un numero decimal: ",1,&intToOct)
-                     << endl;
+                inputFunc("Intoduce un numero decimal: ",1,&intToOct);
+                cout<<str_g<<endl;
                 break;
             case 10:
+                inputFunc("Intoduce un numero octal: ",1,&octToInt);
+                cout<<str_g<<endl;
                 break;
             case 11:
-                cout << inputFunc("Intoduce un numero decimal: ",1,&intToHexa)
-                     << endl;
+                inputFunc("Intoduce un numero decimal: ",1,&intToHexa);
+                cout<<str_g<<endl;
                 break;
             case 12:
-                cout << inputFunc("Intoduce un numero hexadecimal: ",3,&hexaToInt)
-                     << endl;
+                inputFunc("Intoduce un numero hexadecimal: ",3,&hexaToInt);
+                cout<<str_g<<endl;
                 break;
 
             }
@@ -135,7 +123,7 @@ void menu() {
     }
 
 //User interface
-string inputFunc(string input,int valid,string (*func) (string,string* )) {
+void inputFunc(string input,int valid,void (*func) (string,string* )) {
     int i;
     string num;
 
@@ -165,7 +153,7 @@ string inputFunc(string input,int valid,string (*func) (string,string* )) {
         }
     while(i==0);
 
-    return func(num,ptr_g);
+    func(num,ptr_g);
     }
 
 

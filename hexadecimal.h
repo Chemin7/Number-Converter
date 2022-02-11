@@ -43,7 +43,7 @@ char convertHex(int num) {
 
 }
 
-string intToHexa(string str_num, string* ptr) {
+void intToHexa(string str_num, string* ptr) {
     int cociente(0),residuo(0);
     string txt = "";
     string* ptr_txt=&txt;
@@ -57,14 +57,14 @@ string intToHexa(string str_num, string* ptr) {
         numero=cociente;
         }
     *ptr = reverseStr(txt);
-    return *ptr;
+
     }
 
 
 
 
 
-string hexaToInt(string hexa,string* ptr) {
+void hexaToInt(string hexa,string* ptr) {
 
     int sum=0;
 
@@ -105,7 +105,6 @@ string hexaToInt(string hexa,string* ptr) {
 
         }
     *ptr = to_string(sum);
-    return *ptr;
 
     }
 

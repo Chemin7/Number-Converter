@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string intToOct(string str_num,string *ptr){
+void intToOct(string str_num,string *ptr){
 
     string txt;
     int num = stoi(str_num);
@@ -23,7 +23,20 @@ string intToOct(string str_num,string *ptr){
 
 
     *ptr = reverseStr(txt);
-    return *ptr;
+}
+
+void octToInt(string str_num,string *ptr){
+
+    int sum;
+    int n = str_num.length();
+
+    sum=0;
+    for(int i = n-1,j=0; i >= 0;i--,j++ ){
+        sum += (str_num[i]-'0') * pow(8,j);
+    }
+    cout<<"Suma :"<<sum<<endl;
+    *ptr = to_string(sum);
+
 }
 
 #endif // OCTAL_H_INCLUDED
