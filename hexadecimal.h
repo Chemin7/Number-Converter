@@ -11,27 +11,25 @@ using namespace std;
 
 char convertHex(int num) {
 
-    char letters[6] = {'A','B','C','D','E','F'};
-
     if(num >= 10 && num <=15) {
         switch(num) {
             case 10:
-                return letters[0];
+                return  'A';
                 break;
             case 11:
-                return letters[1];
+                return  'B';
                 break;
             case 12:
-                return letters[2];
+                return 'C';
                 break;
             case 13:
-                return letters[3];
+                return 'D';
                 break;
             case 14:
-                 return letters[4];
+                 return 'E';
                 break;
             case 15:
-                return letters[5];
+                return 'F';
                 break;
 
             }
